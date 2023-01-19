@@ -49,3 +49,6 @@ def shipping_cost():
 
 if __name__ == "__main__":
     print("Welcome to the ATM/ Shipping Cost Lab")
+    """ Uncomment one of these to run that program"""
+    # atm_lab()
+    # shipping_cost()

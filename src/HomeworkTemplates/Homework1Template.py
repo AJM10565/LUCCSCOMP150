@@ -93,6 +93,7 @@ def problem10():
 
 if __name__ == "__main__":
     print("Welcome to Homework")
+    """ Uncomment one of these to run/test that problem"""
     # problem4()
     # problem5()
     # problem6()
