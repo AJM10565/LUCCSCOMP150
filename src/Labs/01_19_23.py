@@ -1,8 +1,58 @@
 """
+Truth Table
+
 ATM/Shipping Cost Lab
 
 
 """
+
+
+def truth_table():
+    """ Print a truth table
+    A | B | A and B | A or B |A and !B |!A and B | !(A and B)| etc
+    T | T | ??????? |??????? |
+    T | F | ??????? |??????? |
+    F | T | ??????? |??????? |
+    F | F | ??????? |??????? |
+
+    """
+    A = "A"
+    B = "B"
+    row = f'{A} | {B} | {"A and B"} | {"A or B"} |'
+    print(row)
+    A = True
+    B = True
+    row = f'{A} | {B} | {A and B} | {A or B} |'
+    print(row)
+    B = False
+    row = f'{A} | {B} | {A and B} | {A or B} |'
+    print(row)
+    A = False
+    B = True
+    row = f'{A} | {B} | {A and B} | {A or B} |'
+    print(row)
+    B = False
+    row = f'{A} | {B} | {A and B} | {A or B} |'
+    print(row)
+
+
+def current_day():
+    """ Print the current day month and year
+    example: "Today is Day: 16, Month 1, Year: 2023"
+
+    """
+
+
+from datetime import date
+
+today = date.today()
+
+# dd/mm/YY
+day = today.strftime("%d")
+month = today.strftime("%m")
+year = today.strftime("%Y")
+
+print(f"Today is Day: {day}, Month {month}, Year: {year}")
 
 
 def atm_lab():
@@ -19,10 +69,47 @@ def atm_lab():
 
     Your program should be able to handle multiple transactions and should keep track of the account balance after each transaction. Be sure to use proper syntax and indentation in your code, and include comments to explain your logic.
     """
-
-
-
-    pass
+    print("Welcome to ATM v0.1")
+    balance = 100
+    app_is_running = True
+    while app_is_running:
+        command = input("""Would you like to:
+                        'view': View your current balance
+                        'deposit': add money to your account
+                        'withdraw': remove money from your account
+                        'exit': close the app
+                        """)
+        valid_commands = ['view', 'deposit', 'withdraw', 'exit']
+        if command not in valid_commands:
+            print("You entered: {command}, which is not a valid input")
+        elif command == 'view':
+            print("You have a balance of ${balance}")
+        elif command == 'deposit':
+            amount_to_deposit = input("How much would you like to deposity")
+            amount_to_deposit_as_integer = int(amount)
+            if amount_to_deposit_as_integer >= 0:
+                balance = balance + amount_to_deposit_as_integer
+            else:
+                print("You can only deposit positive amounts of money to the atm machine")
+        elif command == 'withdraw':
+            amount_to_withdraw = input("How much would you like to withdraw")
+            amount_to_withdraw_as_integer = int(amount)
+            if amount_to_withdraw_as_integer >= balance:
+                balance = balance - amount_to_withdraw_as_integer
+                print(f"After withdrawing {amount_to_withdraw_as_integer}, Your new balance is: {balance} ")
+            else:
+                """ Not enough money in the account"""
+                print(f"""
+                You only have {balance} money in your account, 
+                which is less than {amount_to_withdraw_as_integer}
+                """)
+        else:
+            """ here we know tha the command has to be 'exit', as its the last option"""
+            app_is_running = False
+        if app_is_running:
+            pass
+        else:
+            return
 
 
 def shipping_cost():
@@ -44,11 +131,37 @@ def shipping_cost():
     Be sure to use proper syntax and indentation in your code, and include comments to explain your logic.
 
     """
-    pass
+    print("Welcome to the Shipping Cost Calculator App")
+    item_weight = 0
+    distance_to_travel = 0
+    app_is_running = True
+    while app_is_running:
+        while item_weight == 0:
+            response_weight_in_pounds = int(input("How much does your package weight in lbs?"))
+            if not response_weight_in_points > 0:
+                print("The package cannot weight 0 or less lbs")
+            else:
+                item_weight = response_weight_in_pounds
+        while distance_to_travel == 0:
+            response_distance_to_travel = int(input("How far must your package be shipped in miles?"))
+            if not response_distance_to_travel > 0:
+                print("The package must travel at least 0 miles")
+            else:
+                distance_to_travel = response_distance_to_travel
+        cost_to_ship = (distance_to_travel * 0.1) + (item_weight * 0.25)
+        print(
+            f"It will cost {cost_to_ship} to deliver a package weighing {item_weight}lbs a distance of {distance_to_travel} miles.")
+        go_again = input("Would you like to calculate another shipment? enter yes, otherwise have a nice day")
+        if go_again == 'yes':
+            pass
+        else:
+            app_is_running = False
 
 
 if __name__ == "__main__":
     print("Welcome to the ATM/ Shipping Cost Lab")
     """ Uncomment one of these to run that program"""
+    # truth_table()
+    # current_day()
     # atm_lab()
     # shipping_cost()
