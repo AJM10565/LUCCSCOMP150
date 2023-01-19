@@ -1,4 +1,4 @@
-def problem4()
+def problem4():
 """
 Your solution to problem 4 goes here. Here's problem statement as a reference:
 Greet the User with user input:
@@ -8,7 +8,7 @@ Greet the User with user input:
 """
   pass
 
-def problem5()
+def problem5():
 """
 Your solution to problem 5 goes here. Here's problem statement as a reference:
 Temperature conversion
@@ -19,7 +19,7 @@ Temperature conversion
 """
   pass
 
-def problem6()
+def problem6():
 """
 Your solution to problem 6 goes here. Here's problem statement as a reference:
 Odd or Even
@@ -31,7 +31,7 @@ Odd or Even
 """
   pass
 
-def problem7()
+def problem7():
 """
 Your solution to problem 7 goes here. Here's problem statement as a reference:
 Circle Area Calculator
@@ -43,7 +43,7 @@ Circle Area Calculator
 """
   pass
 
-def problem8()
+def problem8():
 """
 Your solution to problem 8 goes here. Here's problem statement as a reference:
 Greeting Generator
@@ -56,7 +56,7 @@ Greeting Generator
 """
   pass
 
-def problem9()
+def problem9():
 """
 Your solution to problem 9 goes here. Here's problem statement as a reference:
 Write a program that calculates a person's age in years, months, and days.
@@ -68,7 +68,7 @@ Write a program that calculates a person's age in years, months, and days.
 """
   pass
 
-def problem10()
+def problem10():
 """
 Your solution to problem 10 goes here. Here's problem statement as a reference:
 Rock, Paper, Scissors Game
@@ -86,4 +86,5 @@ Rock, Paper, Scissors Game
 
 
 if __name__ == "__main__":
+  print("Welcome to Homework")
   
