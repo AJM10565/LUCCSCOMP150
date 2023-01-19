@@ -84,15 +84,15 @@ def atm_lab():
         elif command == 'view':
             print("You have a balance of ${balance}")
         elif command == 'deposit':
-            amount_to_deposit = input("How much would you like to deposity")
-            amount_to_deposit_as_integer = int(amount)
+            amount_to_deposit = input("How much would you like to deposit")
+            amount_to_deposit_as_integer = int(amount_to_deposit)
             if amount_to_deposit_as_integer >= 0:
                 balance = balance + amount_to_deposit_as_integer
             else:
                 print("You can only deposit positive amounts of money to the atm machine")
         elif command == 'withdraw':
             amount_to_withdraw = input("How much would you like to withdraw")
-            amount_to_withdraw_as_integer = int(amount)
+            amount_to_withdraw_as_integer = int(amount_to_withdraw)
             if amount_to_withdraw_as_integer >= balance:
                 balance = balance - amount_to_withdraw_as_integer
                 print(f"After withdrawing {amount_to_withdraw_as_integer}, Your new balance is: {balance} ")
@@ -137,7 +137,7 @@ def shipping_cost():
     while app_is_running:
         while item_weight == 0:
             response_weight_in_pounds = int(input("How much does your package weight in lbs?"))
-            if not response_weight_in_points > 0:
+            if not response_weight_in_pounds > 0:
                 print("The package cannot weight 0 or less lbs")
             else:
                 item_weight = response_weight_in_pounds
