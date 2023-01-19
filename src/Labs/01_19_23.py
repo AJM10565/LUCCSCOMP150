@@ -42,17 +42,16 @@ def current_day():
 
     """
 
+    from datetime import date
 
-from datetime import date
+    today = date.today()
 
-today = date.today()
+    # dd/mm/YY
+    day = today.strftime("%d")
+    month = today.strftime("%m")
+    year = today.strftime("%Y")
 
-# dd/mm/YY
-day = today.strftime("%d")
-month = today.strftime("%m")
-year = today.strftime("%Y")
-
-print(f"Today is Day: {day}, Month {month}, Year: {year}")
+    print(f"Today is Day: {day}, Month {month}, Year: {year}")
 
 
 def atm_lab():
