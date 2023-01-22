@@ -1,10 +1,10 @@
-def problem1():
+def problem1(number: int) -> str:
     """
     Problem:
 
-    Write a Python program that takes an integer as input and returns a string that represents the number with its ordinal
-    suffix. The ordinal suffix should be one of 'st', 'nd', 'rd', or 'th', depending on the input number. The program should
-    handle input numbers in the range of 1 to 100.
+    Write a Python function that takes an integer returns a string that represents the number with its ordinal
+    suffix. The ordinal suffix should be one of 'st', 'nd', 'rd', or 'th', depending on the input number. The program
+    should be able to handle input numbers within -1000000 to 1000000.
 
     Examples:
 
@@ -26,11 +26,11 @@ def problem1():
     """
 
 
-def problem2():
+def problem2(number: int) -> list:
     """
     Problem:
 
-    Write a Python program that generates the Fibonacci sequence of a given length. The program should ask the user for
+    Write a Python function that generates the Fibonacci sequence of a given length. The program should ask the user for
     the number of Fibonacci numbers to generate, and then generate and print the sequence. Your program should utilize
     functions and/or a dictionary to make the solution more reusable and readable.
 
@@ -88,7 +88,34 @@ def problem3(user_input_to_be_validated, validation_type: dict) -> bool:
     """
 
 
-def problem4():
+def problem4(coordinates: str) -> str:
+    """
+    Problem:
+
+    Write a Python function that takes the coordinates of a square on a chessboard as input (e.g. "A1", "D5") and
+    returns the color of the square (either "black" or "white"). The chessboard is a 8x8 grid, where the rows are
+    numbered 1 to 8 and the columns are labeled "A" to "H". The program should be able to handle any valid input
+    coordinates within the chessboard.
+
+    Functionality:
+
+    Accept a string as input representing the coordinates of a square on a chessboard (e.g. "A1", "D5")
+    Determine the color of the square at the given coordinates (black or white)
+    Return the color of the square as a string
+    Examples:
+
+    Input: "A1", Output: "black"
+    Input: "B2", Output: "white"
+    Input: "H8", Output: "black"
+    Input: "D5", Output: "black"
+    Constraints:
+
+    The input will be a string in the format of a letter (A-H) followed by a number (1-8)
+    The program should be able to handle any valid input coordinates within the chessboard.
+    """
+
+
+def problem5():
     """
     Problem:
 
@@ -123,4 +150,4 @@ if __name__ == "__main__":
     # problem2()
     # problem3()
     # problem4()
-
+    # problem5()
