@@ -58,7 +58,6 @@ def problem2(number: int) -> list:
     the number of Fibonacci numbers to generate and returns the sequence.
     You can also create a function that takes two arguments, current and previous, and returns the next number
     in the sequence.
-    Test yo
     """
 
 
@@ -127,7 +126,10 @@ def problem5():
     """
     Problem:
 
-    Create a Tic-Tac-Toe game in Python where two players can play against each other. The game should be played on a 3x3 grid, where the players take turns to place their symbol (X or O) on the grid. The player who succeeds in placing three of their symbols in a horizontal, vertical or diagonal row wins the game. The game should be able to detect a win or a draw and display the result on the screen.
+    Create a Tic-Tac-Toe game in Python where two players can play against each other. The game should be played on a
+    3x3 grid, where the players take turns to place their symbol (X or O) on the grid. The player who succeeds in
+    placing three of their symbols in a horizontal, vertical or diagonal row wins the game. The game should be able
+    to detect a win or a draw and display the result on the screen.
 
     Functionality:
 
