@@ -1,3 +1,127 @@
+def problem1():
+    """
+    Given: A = False, B = True, C = False
+    Solve:
+    a=B and C
+    b=B or C
+    c=not A and B
+    d=(A and B) or not C
+    e=not B and not (A or C)
+    f=B and not C
+    g=not A or not C
+    h=not (A and B) and C
+    i=A or not (B and C)
+    j=not A or B and C
+    """
+    # ok so
+    A = False
+    B = True
+    C = False
+
+    a = B and C
+    print(f"{B and C = }")
+    b = B or C
+    print(f"{B or C = }")
+    c = not A and B
+    print(f"{not A and B = }")
+    d = (A and B) or not C
+    print(f"{(A and B) or not C = }")
+    e = not B and not (A or C)
+    print(f"{not B and not (A or C) = }")
+    f = B and not C
+    print(f"{B and not C = }")
+    g = not A or not C
+    print(f"{not A or not C = }")
+    h = not (A and B) and C
+    print(f"{not (A and B) and C = }")
+    i = A or not (B and C)
+    print(f"{A or not (B and C) = }")
+    j = not A or B and C
+    print(f"{not A or B and C = }")
+    for expression in [a, b, c, d, e, f, g, h, i, j]:
+        print(f"{expression}")
+
+
+def problem2():
+    """
+    Type()
+    for
+    a=27.98
+    b=“Words” and 29
+    c=918273645
+    d=[4,7,11,26]
+    e={“list”:[”23”,”24”,”25”]}
+    f=“Numbers are our Friends!”
+    g=“17”
+    h=“False”
+    i=9.5
+    j=[1,2,3]
+    k={'key': 'value'}
+    l="True"
+    """
+    a = 27.98
+    b = "Words" and 29
+    c = 918273645
+    d = [4, 7, 11, 26]
+    e = {"list": ["23", "24", "25"]}
+    f = "Numbers are our Friends!"
+    g = "17"
+    h = "False"
+    i = 9.5
+    j = [1, 2, 3]
+    k = {'key': 'value'}
+    l = "True"
+    for value in [a, b, c, d, e, f, g, h, i, j, k, l]:
+        print(type(value))
+
+
+def problem3():
+    """
+    and
+    _and
+    var
+    var1
+    1var
+    My-name
+    your name
+    COLOR
+    myVar
+    _myVar
+    my_var
+    my-var
+    my var
+    123
+    """
+    # and = 1
+    print("and is not legal, it is a reserved word")
+    _and = 1
+    print(f"{_and=} is fine")
+    var = 1
+    print(f"{var=} is fine")
+    var1 = 1
+    print(f"{var1=} is fine")
+    # 1var = 1
+    print("1var is not legal, names can't start with numbers")
+    # My-name = 1
+    print("My-name is not legal, cannot use - in names")
+    # your name = 1
+    print("'your name' is not legal, cannot use ' ' space in names")
+    COLOR = 1
+    print(f"{COLOR=} is fine, although in general most names should be lowercase, by convention we reserve fully upper"
+          f"case names for constants, and class names should start with an uppercase character")
+    myVar = 1
+    print(f"{myVar=} is fine")
+    _myVar = 1
+    print(f"{_myVar=} is fine")
+    my_var = 1
+    print(f"{my_var=} is fine")
+    # my-var =1
+    print("my-var is not legal, cannot use - in names")
+    # my var =1
+    print("'my var' is not legal, cannot use ' ' space in names")
+    # 123 =1
+    print(f"Error cannot assign to literal, also names cannot just be an integer or start with a number")
+
 def problem4():
     """
     Your solution to problem 4 goes here. Here's problem statement as a reference:
@@ -326,10 +450,13 @@ def problem10():
 if __name__ == "__main__":
     print("Welcome to Homework")
     """ Uncomment one of these to run/test that problem"""
+    # problem1()
+    # problem2()
+    # problem3()
     # problem4()
     # problem5()
     # problem6()
     # problem7()
     # problem8()
     # problem9()
-    problem10()
+    # problem10()
