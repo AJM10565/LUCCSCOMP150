@@ -12,7 +12,7 @@ def problem1(number: int) -> str:
 
     Write a Python function that takes an integer returns a string that represents the number with its ordinal
     suffix. The ordinal suffix should be one of 'st', 'nd', 'rd', or 'th', depending on the input number. The program
-    should be able to handle input numbers within -1000000 to 1000000.
+    should be able to handle input numbers within 1 to 100.
 
     Examples:
 
@@ -61,7 +61,7 @@ def problem2(number: int) -> list:
     """
 
 
-def problem3(user_input_to_be_validated, validation_type: dict) -> bool:
+def problem3(user_input_to_be_validated, validation_type) -> bool:
     """
     Many times, when we create functions, we're exposing ourselves to accept user input, and we assume the input is ok,
     but now we will write an input validator function to verify that the input "makes sense."
@@ -74,8 +74,10 @@ def problem3(user_input_to_be_validated, validation_type: dict) -> bool:
     1. if validation_type is a dictionary{} and the key of the dictionary is an
         a. integer then the values will be a list with length 2, and you should verify that the first parameter is an
          integer between the two numbers in the list
+        problem3(4,{"integer":[1,5]})
          b. string, then the values will be a list of length 1 or greater, and you should verify that the first
          parameter can be found in the list of values
+         problem3("rock",{"string":["rock","paper","scissors"]})
 
     2. if validation_type of "email" should check if string can be an email (contains @ symbol and ends with
     .com or .edu or .net or .gov or .org)
@@ -133,7 +135,12 @@ def problem5():
 
     Functionality:
 
-    Display an empty 3x3 grid on the screen
+    Display an empty 3x3 grid on the screen:
+    _|_|_    _|_|_
+    _|_|_ => _|X|_
+    _|_|_    _|_|_
+
+
     Allow player 1 to place their symbol (X) on the grid
     Allow player 2 to place their symbol (O) on the grid
     Check for a win or a draw after each turn
