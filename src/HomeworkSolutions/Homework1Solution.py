@@ -19,25 +19,25 @@ def problem1():
     C = False
 
     a = B and C
-    print(f"{B and C = }")
+    print(f"a: {B and C = }")
     b = B or C
-    print(f"{B or C = }")
+    print(f"b: {B or C = }")
     c = not A and B
-    print(f"{not A and B = }")
+    print(f"c: {not A and B = }")
     d = (A and B) or not C
-    print(f"{(A and B) or not C = }")
+    print(f"d: {(A and B) or not C = }")
     e = not B and not (A or C)
-    print(f"{not B and not (A or C) = }")
+    print(f"e: {not B and not (A or C) = }")
     f = B and not C
-    print(f"{B and not C = }")
+    print(f"f: {B and not C = }")
     g = not A or not C
-    print(f"{not A or not C = }")
+    print(f"g: {not A or not C = }")
     h = not (A and B) and C
-    print(f"{not (A and B) and C = }")
+    print(f"h: {not (A and B) and C = }")
     i = A or not (B and C)
-    print(f"{A or not (B and C) = }")
+    print(f"i: {A or not (B and C) = }")
     j = not A or B and C
-    print(f"{not A or B and C = }")
+    print(f"j: {not A or B and C = }")
     for expression in [a, b, c, d, e, f, g, h, i, j]:
         print(f"{expression}")
 
@@ -121,6 +121,7 @@ def problem3():
     print("'my var' is not legal, cannot use ' ' space in names")
     # 123 =1
     print(f"Error cannot assign to literal, also names cannot just be an integer or start with a number")
+
 
 def problem4():
     """
@@ -450,9 +451,9 @@ def problem10():
 if __name__ == "__main__":
     print("Welcome to Homework")
     """ Uncomment one of these to run/test that problem"""
-    # problem1()
-    # problem2()
-    # problem3()
+    problem1()
+    problem2()
+    problem3()
     # problem4()
     # problem5()
     # problem6()
