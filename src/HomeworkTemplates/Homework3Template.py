@@ -6,21 +6,7 @@ function documentation for that problem.
 """
 
 
-def problem1(board: list) -> bool:
-    """
-    Write a Python function called problem1() that takes a single argument board, a list of integers. The function
-    should check if the given board represents a correct solution of a sudoku puzzle.
-
-    A sudoku board is a 9x9 grid of numbers such that each row, column, and 3x3 sub-grid contains all the numbers from
-     1 to 9 exactly once. The input board list may have an arbitrary length, but should be a perfect square,
-     representing a sudoku board of size x size grid, where size = sqrt(len(board)).
-
-    The function should return True if the given board represents a correct solution of a sudoku puzzle,
-    and False otherwise.
-    """
-
-
-def problem2(size: int) -> list:
+def problem1(size: int) -> list:
     """
     Write a Python function called problem2() that takes a single argument size, an integer representing the size
     of the sudoku board. The function should generate and return a partially filled sudoku board of size x size grid,
@@ -33,6 +19,20 @@ def problem2(size: int) -> list:
 
     The function should return the partially filled sudoku board as a list of integers, with empty spaces filled in
      with 0's.
+    """
+
+    
+def problem2(board: list) -> bool:
+    """
+    Write a Python function called problem1() that takes a single argument board, a list of integers. The function
+    should check if the given board represents a correct solution of a sudoku puzzle.
+
+    A sudoku board is a 9x9 grid of numbers such that each row, column, and 3x3 sub-grid contains all the numbers from
+     1 to 9 exactly once. The input board list may have an arbitrary length, but should be a perfect square,
+     representing a sudoku board of size x size grid, where size = sqrt(len(board)).
+
+    The function should return True if the given board represents a correct solution of a sudoku puzzle,
+    and False otherwise.
     """
 
 
