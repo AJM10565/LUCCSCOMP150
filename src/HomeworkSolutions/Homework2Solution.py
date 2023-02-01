@@ -266,23 +266,19 @@ def problem5():
 
 if __name__ == "__main__":
     """ Uncomment one of these to run/test that problem"""
-    # # assert problem1(1234) == "1234th"
-    # #
-    # print(problem1(12))
-    # print(problem1(27))
-    # print(problem1(5))
-    # # assert problem2(15) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
-    # assert problem3("abc", {"string": ["abc", "123", "do re mi"]})
-    # assert not problem3("da rey me", {"string": ["abc", "123", "do re mi"]})
-    # assert problem3(123, {"integer": [1, 1000]})
-    # assert not problem3("(123)-456-7891", "phone_number")
-    # assert problem3("amiller17@luc.edu", "email")
-    # # assert problem4("A1") == "black"
-    # # assert problem4("A8") == "white"
-    # # assert problem4("H1") == "white"
-    # # assert problem4("H8") == "black"
-    #
-    # for i in ["A1", "A8", "H1", "H8"]:
-    #     print(problem4(i))
-    #
-    # # problem5()
+    assert problem1(1234) == "1234th"
+    assert problem2(15) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
+    assert problem3("abc", {"string": ["abc", "123", "do re mi"]})
+    assert not problem3("da rey me", {"string": ["abc", "123", "do re mi"]})
+    assert problem3(123, {"integer": [1, 1000]})
+    assert not problem3("(123)-456-7891", "phone_number")
+    assert problem3("amiller17@luc.edu", "email")
+    assert problem4("A1") == "black"
+    assert problem4("A8") == "white"
+    assert problem4("H1") == "white"
+    assert problem4("H8") == "black"
+
+    for i in ["A1", "A8", "H1", "H8"]:
+        print(problem4(i))
+
+    problem5()
