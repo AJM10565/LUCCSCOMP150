@@ -1,7 +1,7 @@
 """
-Homework #2 Instructions:
+Homework #3 Instructions:
 Submit final solution on sakai. Use this file as a template, rename according to the class convention: UVIDHomework3.py
-To the best of your ability complete problems 1,2,3,4, and 5. If you use a resource, be sure to leave a link inside the
+To the best of your ability complete problems 1,2 and 3. If you use a resource, be sure to leave a link inside the
 function documentation for that problem.
 """
 
@@ -20,7 +20,7 @@ def problem1(board: list) -> bool:
     """
 
 
-def problem2():
+def problem2(size: int) -> list:
     """
     Write a Python function called problem2() that takes a single argument size, an integer representing the size
     of the sudoku board. The function should generate and return a partially filled sudoku board of size x size grid,
@@ -36,7 +36,7 @@ def problem2():
     """
 
 
-def problem3():
+def problem3(board: list)-> bool:
     """
     Write a Python function called check_unique_solution that takes a single argument board, a list of integers
     representing a partially filled sudoku board. The function should check if there is a single unique solution to the
