@@ -1,7 +1,7 @@
 """
-Homework #2 Instructions:
+Homework #3 Instructions:
 Submit final solution on sakai. Use this file as a template, rename according to the class convention: UVIDHomework2.py
-To the best of your ability complete problems 1,2,3,4, and 5. If you use a resource, be sure to leave a link inside the
+To the best of your ability complete problems 1,2,3. If you use a resource, be sure to leave a link inside the
 function documentation for that problem.
 """
 
