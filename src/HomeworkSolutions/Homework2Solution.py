@@ -170,7 +170,7 @@ def problem4(coordinates: str) -> str:
     The program should be able to handle any valid input coordinates within the chessboard.
     """
 
-    column_index = ord(coordinates[0].upper())
+    column_index = ord(coordinates[0].upper()) - ord("A")
     row_index = int(coordinates[1]) - 1
     if (column_index + row_index) % 2 == 0:
         return 'black'
