@@ -31,7 +31,16 @@ def get_uniques(story: str) -> List[str]:
     The goal of this function, is to take in a long text string, and return a list of only the unique words.
     While this is seemingly a silly goal, in data science and other fields, it is useful to be able to study uniqueness.
     """
-    return []  # replace this with your code
+    split_story = story.lower().replace("\n", " ").replace(".", " ").replace("'", "").split(" ")
+    old_list = split_story
+    new_list = []
+    for word in old_list:
+        if word not in new_list:
+            new_list.append(word)
+
+    # How do I make new_list full of words, each only appearing once
+
+    return new_list
 
 
 def create_crossword_puzzle(
@@ -217,3 +226,15 @@ def play_crossword_puzzle():
         else:
             print(wrong_choice_message(word))
             print(format_score_for_printing(puzzle, bad_guesses_remaining, clues_guessed_correctly))
+
+
+if __name__ == "__main__":
+    text = """One dollar and eighty-seven cents. That was all. And sixty cents of it
+was in pennies. Pennies saved one and two at a time by bulldozing the
+grocer and the vegetable man and the butcher until one's cheeks burned
+with the silent imputation of parsimony that such close dealing
+implied. Three times Della counted it. One dollar and eighty-seven
+cents. And the next day would be Christmas."""
+
+    result = get_uniques(text)
+    print(result)
