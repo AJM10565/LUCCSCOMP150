@@ -1,6 +1,6 @@
 """
 Agenda:
-Lab 02_02_23.py
+Lab CrossWord.py
 
 kabob-case => web pages
 snake_case => python variables and function names

@@ -12,6 +12,7 @@ last weeks lab, except instead of a single word, the player will be trying to so
 be sentences from the story where the word is missing, kind of like a madlib.
 
 stories pulled from: https://www.gutenberg.org/files/20831/20831.txt
+You can find the text files under the /src/texts/books directory
 
 
 """
