@@ -24,7 +24,8 @@ def load_from_filepath(filepath: str) -> str:
     The goal of this function is to successfully load a file given its relative or absolute path and return it as one
     big long string.
     """
-    return ""  # your code goes here
+    with open(filepath, "r") as f:
+        return f.read()
 
 
 def get_uniques(story: str) -> List[str]:
@@ -237,5 +238,7 @@ with the silent imputation of parsimony that such close dealing
 implied. Three times Della counted it. One dollar and eighty-seven
 cents. And the next day would be Christmas."""
 
-    result = get_uniques(text)
-    print(result)
+    # result = get_uniques(text)
+    # print(result)
+    text = load_from_filepath("A_Reward_of_Merit_by_BOOTH_TARKINGTON.txt")
+    print(text)
