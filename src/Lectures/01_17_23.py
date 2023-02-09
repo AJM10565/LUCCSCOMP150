@@ -9,10 +9,8 @@ Boolean Logic
 Naming
 """
 
-
-
 allanmiller = 2
-the_type_of_allanmiller_is=type(allanmiller)
+the_type_of_allanmiller_is = type(allanmiller)
 print(f"{the_type_of_allanmiller_is=}")
 print(type(allanmiller))
 # print("Hello World!")
@@ -24,7 +22,4 @@ print(f"{blah=}")
 print(message)
 print(allanmiller)
 
-
 print(f"{bool(0)=}")
-
-

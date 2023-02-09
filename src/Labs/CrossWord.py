@@ -238,7 +238,7 @@ with the silent imputation of parsimony that such close dealing
 implied. Three times Della counted it. One dollar and eighty-seven
 cents. And the next day would be Christmas."""
 
-    # result = get_uniques(text)
-    # print(result)
-    text = load_from_filepath("A_Reward_of_Merit_by_BOOTH_TARKINGTON.txt")
-    print(text)
+    result = get_uniques(text)
+    print(result)
+    # text = load_from_filepath("A_Reward_of_Merit_by_BOOTH_TARKINGTON.txt")
+    # print(text)
