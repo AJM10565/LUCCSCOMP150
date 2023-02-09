@@ -1,0 +1,7 @@
+The goal of this homework assignment is to review and reinforce the topics we discussed in class this week, and in the
+class so far.
+This week we will have covered:
+1) reading files from another file
+2) processing strings
+3) writing strings to new files
+
